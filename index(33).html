@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Auntie Apps complimentary family pilot intake for personalized digital enrichment experiences.">
+<title>Tell Auntie About Your Kid · Auntie Apps</title>
+<style>
+:root{--ink:#171321;--soft:#514A63;--white:#fff;--wash:#F8F7FF;--cyan:#4BF0F6;--green:#7BF447;--violet:#7635F8;--purple:#CE49F4;--pink:#F845B3;--line:#D8D1EB;--shadow:0 24px 70px rgba(118,53,248,.16)}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);background:radial-gradient(circle at 92% 8%,rgba(75,240,246,.28),transparent 25rem),radial-gradient(circle at 8% 92%,rgba(123,244,71,.20),transparent 24rem),linear-gradient(145deg,#fff 0%,var(--wash) 52%,#fff 100%);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}.shell{width:min(800px,calc(100% - 28px));margin:auto;padding:34px 0 58px}.eyebrow{display:inline-flex;margin:0 0 13px;padding:7px 12px;border:2px solid var(--ink);border-radius:999px;background:var(--green);font-size:.75rem;font-weight:950;letter-spacing:.13em;text-transform:uppercase;box-shadow:5px 5px 0 var(--ink)}h1{margin:0;max-width:720px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.55rem,7vw,4.8rem);line-height:.96;letter-spacing:-.05em}h1:after{content:"";display:block;width:min(350px,72%);height:10px;margin-top:15px;border-radius:999px;background:linear-gradient(90deg,var(--violet),var(--cyan),var(--green))}.intro{max-width:720px;margin:18px 0 0;color:var(--soft);font-size:1.08rem}.overview{margin:27px 0 22px;padding:22px;border:2px solid var(--ink);border-radius:20px;background:var(--white);box-shadow:8px 8px 0 var(--cyan)}.overview-kicker{margin:0 0 6px;color:var(--violet);font-size:.76rem;font-weight:950;letter-spacing:.13em;text-transform:uppercase}.overview h2{margin:0 0 18px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.45rem,4vw,2rem);line-height:1.08}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.step-card{min-height:185px;padding:15px;border:2px solid var(--ink);border-radius:15px;background:#FCFBFF}.step-card:nth-child(1){box-shadow:4px 4px 0 var(--cyan)}.step-card:nth-child(2){box-shadow:4px 4px 0 var(--green)}.step-card:nth-child(3){box-shadow:4px 4px 0 var(--purple)}.step-number{display:grid;place-items:center;width:32px;height:32px;margin-bottom:11px;border:2px solid var(--ink);border-radius:50%;background:var(--violet);color:#fff;font-weight:950}.step-card strong{display:block;margin-bottom:6px}.step-card p{margin:0;color:var(--soft);font-size:.89rem}.pilot-note{margin:26px 0 22px;padding:17px 18px;border:2px solid var(--ink);border-radius:16px;background:#fff;box-shadow:7px 7px 0 var(--green);color:#302A3D}.progress-wrap{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;margin:25px 0 12px}.progress-track{height:11px;overflow:hidden;border:2px solid var(--ink);border-radius:999px;background:#fff}.progress-bar{width:33.333%;height:100%;background:linear-gradient(90deg,var(--violet),var(--cyan),var(--green));transition:width .25s}.progress-text{min-width:76px;font-size:.86rem;font-weight:900;text-align:right}form{border:2px solid var(--ink);border-radius:26px;background:rgba(255,255,255,.98);box-shadow:var(--shadow);overflow:hidden}form:before{content:"";display:block;height:10px;background:linear-gradient(90deg,var(--violet),var(--cyan),var(--green))}fieldset{margin:0;padding:30px;border:0}fieldset[hidden]{display:none}legend{width:100%;margin-bottom:7px;padding:0;font-family:Georgia,"Times New Roman",serif;font-size:1.78rem;font-weight:800;color:var(--violet)}.step-lede{margin:0 0 25px;color:var(--soft)}.field{margin:0 0 23px}.field:last-child{margin-bottom:0}label,.field-label{display:block;margin-bottom:7px;font-weight:900}.required:after{content:" *";color:var(--pink)}.help{display:block;margin:-2px 0 9px;color:var(--soft);font-size:.88rem}input,textarea,select{width:100%;border:2px solid var(--line);border-radius:13px;background:#fff;color:var(--ink);font:inherit;font-size:1rem;padding:13px 14px;outline:none}textarea{min-height:112px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--violet);box-shadow:0 0 0 5px rgba(118,53,248,.13)}.choices{display:grid;gap:10px}.choice{display:flex;gap:10px;align-items:flex-start;padding:12px 13px;border:2px solid var(--line);border-radius:13px;background:#FCFBFF;font-weight:750}.choice input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--violet)}.privacy-note{margin-top:21px;padding:16px;border:2px solid var(--ink);border-radius:13px;background:rgba(75,240,246,.16);font-size:.9rem;box-shadow:5px 5px 0 var(--cyan)}.actions{display:flex;justify-content:space-between;gap:12px;padding:20px 28px 27px;border-top:2px solid var(--ink);background:linear-gradient(90deg,rgba(118,53,248,.08),rgba(75,240,246,.10))}button{min-height:49px;border:2px solid var(--ink);border-radius:999px;padding:12px 22px;font:inherit;font-weight:900;cursor:pointer}.secondary{background:#fff;box-shadow:4px 4px 0 var(--ink)}.primary{margin-left:auto;background:var(--violet);color:#fff;box-shadow:5px 5px 0 var(--ink)}.footer{margin:20px 6px 0;color:var(--soft);font-size:.83rem;font-weight:700;text-align:center}.honeypot{display:none!important}@media(max-width:590px){.shell{padding-top:23px}.steps{grid-template-columns:1fr}.step-card{min-height:0}fieldset{padding:23px 18px}.actions{padding:18px}h1:after{height:8px}}
+</style>
+</head>
+<body>
+<main class="shell">
+<p class="eyebrow">Auntie Apps · Complimentary Family Pilot</p>
+<h1>Tell Auntie About Your Kid</h1>
+<p class="intro">Auntie Apps turns a child’s very specific interests into a personalized browser experience. Some become playful games. Others feel more like a virtual children’s museum, a story world, a discovery room, a scavenger adventure, or a hands-on activity starter.</p>
+<section class="overview" aria-labelledby="overview-title">
+<p class="overview-kicker">Here’s what’s happening</p>
+<h2 id="overview-title">You bring the kid lore. Auntie builds the right kind of experience.</h2>
+<div class="steps">
+<div class="step-card"><span class="step-number">1</span><strong>Tell me what lights them up.</strong><p>Share their current fascination, how they naturally like to play or explore, and a few unmistakably-them details.</p></div>
+<div class="step-card"><span class="step-number">2</span><strong>I shape the format around them.</strong><p>The result might be a game, exhibit, story, creative prompt, movement experience, or another small browser-based world.</p></div>
+<div class="step-card"><span class="step-number">3</span><strong>You review it first.</strong><p>You receive an unlisted link, decide whether it fits your family, and share honest feedback after testing.</p></div>
+</div>
+</section>
+<div class="pilot-note"><strong>This is a complimentary pilot.</strong> There is no cost, posting requirement, or expectation of a positive review. Any request to share a quote, image, recording, or part of the experience publicly will come separately, and you can always say no.<br><br><strong>Have more than one kiddo?</strong> Feel free to submit a separate form for each child so each experience can be built around their own interests and personality.</div>
+<div class="progress-wrap" aria-live="polite"><div class="progress-track"><div class="progress-bar" id="progressBar"></div></div><div class="progress-text" id="progressText">Step 1 of 3</div></div>
+<form id="pilotForm" action="https://formsubmit.co/laurenbush305@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Auntie Apps family pilot intake">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" id="thankYouUrl">
+<input type="hidden" name="_url" id="formUrl">
+<input type="hidden" name="_replyto" id="replyTo">
+<input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off">
+<fieldset data-step="1">
+<legend>The basics</legend>
+<p class="step-lede">Just enough information to make the experience age-appropriate and personal.</p>
+<div class="field"><label class="required" for="parentName">1. Your name</label><input id="parentName" name="Parent Name" type="text" autocomplete="name" required></div>
+<div class="field"><label class="required" for="email">2. Best email address</label><span class="help">This is where I’ll send the link and any quick clarification.</span><input id="email" name="Email" type="email" autocomplete="email" required></div>
+<div class="field"><label class="required" for="childNickname">3. Child’s first name or nickname</label><span class="help">Whatever they would enjoy seeing on screen. Please skip full legal names.</span><input id="childNickname" name="Child Nickname" type="text" required></div>
+<div class="field"><label class="required" for="childAge">4. How old are they?</label><input id="childAge" name="Child Age" type="number" min="2" max="17" inputmode="numeric" required></div>
+<div class="field"><label for="birthday">5. When is their birthday?</label><span class="help">Month and day only, such as July 27. Optional.</span><input id="birthday" name="Birthday MM/DD" type="text" placeholder="July 27"></div>
+</fieldset>
+<fieldset data-step="2" hidden>
+<legend>Their little world</legend>
+<p class="step-lede">This is where the experience starts sounding like your child and nobody else’s.</p>
+<div class="field"><label class="required" for="interest">6. What are they deeply curious about or completely into right now?</label><span class="help">An animal, hobby, imaginary business, sport, machine, story, character, collection, question, or wonderfully random fixation.</span><textarea id="interest" name="Current Interest" required></textarea></div>
+<div class="field"><span class="field-label required">7. What kind of experience sounds most natural for them?</span><span class="help">Choose the closest fit. “Not sure” is useful too.</span><div class="choices">
+<label class="choice"><input type="radio" name="Preferred Format" value="Playful browser game" required><span>A playful browser game</span></label>
+<label class="choice"><input type="radio" name="Preferred Format" value="Virtual museum or discovery room"><span>A virtual museum, exhibit, or discovery room</span></label>
+<label class="choice"><input type="radio" name="Preferred Format" value="Story or imaginative world"><span>A story or imaginative world to explore</span></label>
+<label class="choice"><input type="radio" name="Preferred Format" value="Hands-on making activity"><span>A hands-on making or design activity</span></label>
+<label class="choice"><input type="radio" name="Preferred Format" value="Scavenger or movement activity"><span>A scavenger, movement, or room adventure</span></label>
+<label class="choice"><input type="radio" name="Preferred Format" value="Routine or helper experience"><span>A routine, practice, or helper experience</span></label>
+<label class="choice"><input type="radio" name="Preferred Format" value="Not sure"><span>Not sure yet; recommend what fits</span></label>
+</div></div>
+<div class="field"><label class="required" for="experienceAction">8. What would you love for them to do, discover, make, imagine, or practice?</label><span class="help">One or two sentences is plenty. Example: “He wants to build a tiny train museum and invent a new route through the house.”</span><textarea id="experienceAction" name="Desired Experience" required></textarea></div>
+<div class="field"><label class="required" for="personalDetails">9. Give me up to three details that would make it feel unmistakably theirs.</label><span class="help">Favorite colors, sayings, foods, pets, jokes, tools, places, or other small things they love.</span><textarea id="personalDetails" name="Personal Details" required></textarea></div>
+<div class="field"><span class="field-label required">10. What is this experience for?</span><div class="choices">
+<label class="choice"><input type="radio" name="Purpose" value="Birthday or celebration" required><span>Birthday or celebration</span></label>
+<label class="choice"><input type="radio" name="Purpose" value="Curiosity and enrichment"><span>Curiosity and enrichment</span></label>
+<label class="choice"><input type="radio" name="Purpose" value="Creative play"><span>Creative play</span></label>
+<label class="choice"><input type="radio" name="Purpose" value="Routine or skill support"><span>Routine or skill support</span></label>
+<label class="choice"><input type="radio" name="Purpose" value="Family time"><span>Family time</span></label>
+<label class="choice"><input type="radio" name="Purpose" value="Just because"><span>Just because</span></label>
+<label class="choice"><input type="radio" name="Purpose" value="Other"><span>Other</span></label>
+</div></div>
+</fieldset>
+<fieldset data-step="3" hidden>
+<legend>Family fit</legend>
+<p class="step-lede">A few practical boundaries so the first version respects how your family uses screens.</p>
+<div class="field"><span class="field-label required">11. How should the screen fit into the experience?</span><div class="choices">
+<label class="choice"><input type="radio" name="Screen Preference" value="Brief launch then offline" required><span>A brief screen moment that sends us into an offline activity</span></label>
+<label class="choice"><input type="radio" name="Screen Preference" value="Parent-led together"><span>A parent-led experience we use together</span></label>
+<label class="choice"><input type="radio" name="Screen Preference" value="Independent child exploration"><span>Something the child can explore more independently</span></label>
+<label class="choice"><input type="radio" name="Screen Preference" value="Flexible or not sure"><span>Flexible or not sure yet</span></label>
+</div></div>
+<div class="field"><label for="avoid">12. Anything I should avoid?</label><span class="help">Optional: scary topics, sensory concerns, reward systems, words, characters, sounds, or themes.</span><textarea id="avoid" name="Avoid"></textarea></div>
+<div class="field"><label class="required" for="device">13. What device would the adult use to open it?</label><select id="device" name="Device" required><option value="" selected disabled>Choose one</option><option>iPhone</option><option>iPad</option><option>Android phone or tablet</option><option>Laptop or desktop</option><option>Not sure</option></select></div>
+<div class="field"><label for="deadline">14. Is there a deadline or special occasion?</label><span class="help">Optional. Tell me the date you would need it by.</span><input id="deadline" name="Deadline" type="date"></div>
+<div class="privacy-note"><strong>No child photo or face is needed.</strong> Please leave out school names, addresses, schedules, and other identifying information. The finished pilot is delivered through an <strong>unlisted link</strong>: it is not advertised or linked publicly, but anyone with the URL can open it.</div>
+</fieldset>
+<div class="actions"><button class="secondary" id="backButton" type="button" hidden>Back</button><button class="primary" id="nextButton" type="button">Next</button><button class="primary" id="submitButton" type="submit" hidden>Send it to Auntie</button></div>
+</form>
+<p class="footer">Auntie Apps · Personalized digital enrichment for families</p>
+</main>
+<script>
+const form=document.getElementById('pilotForm');const fieldsets=[...form.querySelectorAll('fieldset[data-step]')];const nextButton=document.getElementById('nextButton');const backButton=document.getElementById('backButton');const submitButton=document.getElementById('submitButton');const progressBar=document.getElementById('progressBar');const progressText=document.getElementById('progressText');const email=document.getElementById('email');const replyTo=document.getElementById('replyTo');const thankYouUrl=document.getElementById('thankYouUrl');const formUrl=document.getElementById('formUrl');let currentStep=0;if(location.protocol==='http:'||location.protocol==='https:'){thankYouUrl.value=new URL('thank-you.html',location.href).href;formUrl.value=location.href}function showStep(index){fieldsets.forEach((f,i)=>f.hidden=i!==index);currentStep=index;progressBar.style.width=`${((index+1)/fieldsets.length)*100}%`;progressText.textContent=`Step ${index+1} of ${fieldsets.length}`;backButton.hidden=index===0;nextButton.hidden=index===fieldsets.length-1;submitButton.hidden=index!==fieldsets.length-1;scrollTo({top:0,behavior:'smooth'})}function valid(){for(const c of fieldsets[currentStep].querySelectorAll('input,textarea,select')){if(!c.checkValidity()){c.reportValidity();return false}}return true}nextButton.onclick=()=>{if(valid())showStep(currentStep+1)};backButton.onclick=()=>showStep(currentStep-1);form.addEventListener('submit',e=>{if(!valid()){e.preventDefault();return}if(location.protocol!=='http:'&&location.protocol!=='https:'){e.preventDefault();alert('This form will submit once it is hosted online.');return}replyTo.value=email.value;thankYouUrl.value=new URL('thank-you.html',location.href).href;formUrl.value=location.href;submitButton.disabled=true;submitButton.textContent='Sending…'})
+</script>
+</body>
+</html>
