@@ -2,33 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Auntie Apps complimentary pilot feedback form.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Auntie Apps complimentary family pilot feedback form.">
 <title>Auntie Apps Pilot Feedback</title>
 <style>
-:root{--ink:#171321;--soft:#514A63;--white:#fff;--heliotrope:#CE49F4;--rose:#F845B3;--malibu:#4BF0F6;--green:#7BF447;--violet:#7635F8;--shadow:0 24px 70px rgba(118,53,248,.18)}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);background:radial-gradient(circle at 8% 8%,rgba(248,69,179,.28),transparent 24rem),radial-gradient(circle at 92% 10%,rgba(75,240,246,.30),transparent 25rem),radial-gradient(circle at 85% 92%,rgba(123,244,71,.22),transparent 22rem),linear-gradient(145deg,#fff 0%,#F8F2FF 48%,#fff 100%);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}
-.shell{width:min(780px,calc(100% - 28px));margin:0 auto;padding:34px 0 58px}.eyebrow{display:inline-flex;margin:0 0 12px;padding:7px 12px;border:2px solid var(--ink);border-radius:999px;background:var(--green);font-size:.76rem;font-weight:900;letter-spacing:.13em;text-transform:uppercase;box-shadow:5px 5px 0 var(--ink)}
-h1{margin:0;max-width:700px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.55rem,7vw,4.75rem);line-height:.96;letter-spacing:-.05em}h1:after{content:"";display:block;width:min(340px,72%);height:12px;margin-top:14px;border-radius:999px;background:linear-gradient(90deg,var(--rose),var(--heliotrope),var(--malibu),var(--green))}
-.intro{max-width:680px;margin:18px 0 0;color:var(--soft);font-size:1.08rem}.truth-note{margin:26px 0 22px;padding:17px 18px;border:2px solid var(--ink);border-radius:16px;background:var(--white);box-shadow:7px 7px 0 var(--malibu)}
-.progress-wrap{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;margin:25px 0 12px}.progress-track{height:11px;overflow:hidden;border:2px solid var(--ink);border-radius:999px;background:var(--white)}.progress-bar{width:33.333%;height:100%;background:linear-gradient(90deg,var(--violet),var(--rose),var(--malibu));transition:width .25s}.progress-text{min-width:76px;font-size:.86rem;font-weight:900;text-align:right}
-form{border:2px solid var(--ink);border-radius:26px;background:rgba(255,255,255,.98);box-shadow:var(--shadow);overflow:hidden}form:before{content:"";display:block;height:10px;background:linear-gradient(90deg,var(--rose),var(--heliotrope),var(--violet),var(--malibu),var(--green))}
-fieldset{margin:0;padding:30px;border:0}fieldset[hidden]{display:none}legend{width:100%;margin-bottom:7px;padding:0;font-family:Georgia,"Times New Roman",serif;font-size:1.78rem;font-weight:800;color:var(--violet)}.step-lede{margin:0 0 25px;color:var(--soft)}
-.field{margin:0 0 23px}.field:last-child{margin-bottom:0}label,.field-label{display:block;margin-bottom:7px;font-weight:900}.required:after{content:" *";color:var(--rose)}.help{display:block;margin:-2px 0 9px;color:var(--soft);font-size:.88rem}
-input,textarea,select{width:100%;border:2px solid #CFC1E8;border-radius:13px;background:#fff;color:var(--ink);font:inherit;padding:13px 14px;outline:none}textarea{min-height:118px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--violet);box-shadow:0 0 0 5px rgba(118,53,248,.14)}
-.choices{display:grid;gap:10px}.choice{display:flex;gap:10px;align-items:flex-start;padding:12px 13px;border:2px solid #DCCFF2;border-radius:13px;background:#FCFAFF;font-weight:750}.choice input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--violet)}
-.actions{display:flex;justify-content:space-between;gap:12px;padding:20px 28px 27px;border-top:2px solid var(--ink);background:linear-gradient(90deg,rgba(206,73,244,.10),rgba(75,240,246,.10))}button{min-height:49px;border:2px solid var(--ink);border-radius:999px;padding:12px 22px;font:inherit;font-weight:900;cursor:pointer}.secondary{background:#fff;box-shadow:4px 4px 0 var(--ink)}.primary{margin-left:auto;background:var(--violet);color:#fff;box-shadow:5px 5px 0 var(--ink)}.footer{margin:20px 6px 0;color:var(--soft);font-size:.83rem;font-weight:700;text-align:center}.honeypot{display:none!important}
-@media(max-width:560px){.shell{padding-top:23px}fieldset{padding:23px 18px}.actions{padding:18px}h1:after{height:9px}}
+:root{--ink:#171321;--soft:#514A63;--white:#fff;--cyan:#4BF0F6;--green:#7BF447;--violet:#7635F8;--purple:#CE49F4;--pink:#F845B3;--line:#D8D1EB;--shadow:0 24px 70px rgba(118,53,248,.16)}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);background:radial-gradient(circle at 92% 8%,rgba(75,240,246,.28),transparent 25rem),radial-gradient(circle at 8% 92%,rgba(123,244,71,.20),transparent 24rem),linear-gradient(145deg,#fff 0%,#F8F7FF 52%,#fff 100%);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}.shell{width:min(800px,calc(100% - 28px));margin:auto;padding:34px 0 58px}.eyebrow{display:inline-flex;margin:0 0 13px;padding:7px 12px;border:2px solid var(--ink);border-radius:999px;background:var(--green);font-size:.75rem;font-weight:950;letter-spacing:.13em;text-transform:uppercase;box-shadow:5px 5px 0 var(--ink)}h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.55rem,7vw,4.8rem);line-height:.96;letter-spacing:-.05em}h1:after{content:"";display:block;width:min(350px,72%);height:10px;margin-top:15px;border-radius:999px;background:linear-gradient(90deg,var(--violet),var(--cyan),var(--green))}.intro{max-width:720px;margin:18px 0 0;color:var(--soft);font-size:1.08rem}.truth-note{margin:26px 0 22px;padding:17px 18px;border:2px solid var(--ink);border-radius:16px;background:#fff;box-shadow:7px 7px 0 var(--cyan)}.progress-wrap{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;margin:25px 0 12px}.progress-track{height:11px;overflow:hidden;border:2px solid var(--ink);border-radius:999px;background:#fff}.progress-bar{width:33.333%;height:100%;background:linear-gradient(90deg,var(--violet),var(--cyan),var(--green));transition:width .25s}.progress-text{min-width:76px;font-size:.86rem;font-weight:900;text-align:right}form{border:2px solid var(--ink);border-radius:26px;background:rgba(255,255,255,.98);box-shadow:var(--shadow);overflow:hidden}form:before{content:"";display:block;height:10px;background:linear-gradient(90deg,var(--violet),var(--cyan),var(--green))}fieldset{margin:0;padding:30px;border:0}fieldset[hidden]{display:none}legend{width:100%;margin-bottom:7px;padding:0;font-family:Georgia,"Times New Roman",serif;font-size:1.78rem;font-weight:800;color:var(--violet)}.step-lede{margin:0 0 25px;color:var(--soft)}.field{margin:0 0 23px}.field:last-child{margin-bottom:0}label,.field-label{display:block;margin-bottom:7px;font-weight:900}.required:after{content:" *";color:var(--pink)}.help{display:block;margin:-2px 0 9px;color:var(--soft);font-size:.88rem}input,textarea,select{width:100%;border:2px solid var(--line);border-radius:13px;background:#fff;color:var(--ink);font:inherit;font-size:1rem;padding:13px 14px;outline:none}textarea{min-height:112px;resize:vertical}input:focus,textarea:focus,select:focus{border-color:var(--violet);box-shadow:0 0 0 5px rgba(118,53,248,.13)}.choices{display:grid;gap:10px}.choice{display:flex;gap:10px;align-items:flex-start;padding:12px 13px;border:2px solid var(--line);border-radius:13px;background:#FCFBFF;font-weight:750}.choice input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--violet)}.actions{display:flex;justify-content:space-between;gap:12px;padding:20px 28px 27px;border-top:2px solid var(--ink);background:linear-gradient(90deg,rgba(118,53,248,.08),rgba(75,240,246,.10))}button{min-height:49px;border:2px solid var(--ink);border-radius:999px;padding:12px 22px;font:inherit;font-weight:900;cursor:pointer}.secondary{background:#fff;box-shadow:4px 4px 0 var(--ink)}.primary{margin-left:auto;background:var(--violet);color:#fff;box-shadow:5px 5px 0 var(--ink)}.footer{margin:20px 6px 0;color:var(--soft);font-size:.83rem;font-weight:700;text-align:center}.honeypot{display:none!important}@media(max-width:590px){.shell{padding-top:23px}fieldset{padding:23px 18px}.actions{padding:18px}h1:after{height:8px}}
 </style>
 </head>
 <body>
 <main class="shell">
 <p class="eyebrow">Auntie Apps · Pilot Feedback</p>
 <h1>Tell Auntie the truth.</h1>
-<p class="intro">The cute parts matter, but the useful parts matter more. Tell me what your child actually did, what worked, and what needs another pass.</p>
-<div class="truth-note"><strong>This form is only for honest feedback.</strong> There is no expectation of a positive response. I will ask separately before quoting you or sharing any name, screenshot, photo, or video publicly.</div>
+<p class="intro">Tell me what your child or family actually did, what felt personal, what worked, and what needs another pass.</p>
+<div class="truth-note"><strong>Useful beats polite.</strong> There is no expectation of a positive response. No photo or video is required. I will ask separately before quoting you or sharing any name, screenshot, recording, image, or part of the experience publicly.</div>
 <div class="progress-wrap"><div class="progress-track"><div class="progress-bar" id="progressBar"></div></div><div class="progress-text" id="progressText">Step 1 of 3</div></div>
-
 <form id="feedbackForm" action="https://formsubmit.co/laurenbush305@gmail.com" method="POST">
 <input type="hidden" name="_subject" value="New Auntie Apps pilot feedback">
 <input type="hidden" name="_template" value="table">
@@ -37,14 +25,13 @@ input,textarea,select{width:100%;border:2px solid #CFC1E8;border-radius:13px;bac
 <input type="hidden" name="_url" id="formUrl">
 <input type="hidden" name="_replyto" id="replyTo">
 <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off">
-
 <fieldset data-step="1">
 <legend>What happened?</legend>
-<p class="step-lede">Start with the real-life reaction, including the parts that made you laugh.</p>
+<p class="step-lede">Start with the real reaction, whether the experience was playful, screen-light, hands-on, or somewhere in between.</p>
 <div class="field"><label class="required" for="parentName">1. Your name</label><input id="parentName" name="Parent Name" type="text" required></div>
 <div class="field"><label class="required" for="email">2. Best email address</label><input id="email" name="Email" type="email" required></div>
 <div class="field"><label class="required" for="childNickname">3. Child’s first name or nickname</label><input id="childNickname" name="Child Nickname" type="text" required></div>
-<div class="field"><label class="required" for="firstReaction">4. What was their first reaction when they saw the game?</label><span class="help">Their exact words, facial expression, or immediate behavior are all useful.</span><textarea id="firstReaction" name="First Reaction" required></textarea></div>
+<div class="field"><label class="required" for="firstReaction">4. What was their first reaction to the experience?</label><span class="help">Their exact words or immediate behavior are useful. No face photo is needed.</span><textarea id="firstReaction" name="First Reaction" required></textarea></div>
 <div class="field"><span class="field-label required">5. How much help did they need to understand what to do?</span><div class="choices">
 <label class="choice"><input type="radio" name="Help Needed" value="Understood immediately" required><span>They understood immediately</span></label>
 <label class="choice"><input type="radio" name="Help Needed" value="Needed a little help"><span>They needed a little help</span></label>
@@ -52,64 +39,57 @@ input,textarea,select{width:100%;border:2px solid #CFC1E8;border-radius:13px;bac
 <label class="choice"><input type="radio" name="Help Needed" value="Could not figure it out"><span>They could not figure it out</span></label>
 </div></div>
 </fieldset>
-
 <fieldset data-step="2" hidden>
 <legend>What landed?</legend>
-<p class="step-lede">This helps me separate adorable decoration from the parts that create real engagement.</p>
-<div class="field"><label class="required" for="favoritePart">6. What did they enjoy most?</label><textarea id="favoritePart" name="Favorite Part" required></textarea></div>
+<p class="step-lede">This separates the personal, engaging parts from anything that felt confusing or overbuilt.</p>
+<div class="field"><label class="required" for="favoritePart">6. What did they enjoy or respond to most?</label><textarea id="favoritePart" name="Favorite Part" required></textarea></div>
 <div class="field"><label for="confusingPart">7. What confused, frustrated, bored, or slowed them down?</label><span class="help">“Nothing” is a perfectly acceptable answer.</span><textarea id="confusingPart" name="Confusing or Frustrating"></textarea></div>
-<div class="field"><span class="field-label required">8. Did they ask to play again?</span><div class="choices">
-<label class="choice"><input type="radio" name="Replay" value="Yes, immediately" required><span>Yes, immediately</span></label>
-<label class="choice"><input type="radio" name="Replay" value="Yes, later"><span>Yes, later</span></label>
-<label class="choice"><input type="radio" name="Replay" value="No"><span>No</span></label>
-<label class="choice"><input type="radio" name="Replay" value="Not sure yet"><span>Not sure yet</span></label>
+<div class="field"><span class="field-label required">8. Did they want to keep going, continue offline, or return to it later?</span><div class="choices">
+<label class="choice"><input type="radio" name="Return Interest" value="Yes, immediately" required><span>Yes, immediately</span></label>
+<label class="choice"><input type="radio" name="Return Interest" value="Yes, later"><span>Yes, later</span></label>
+<label class="choice"><input type="radio" name="Return Interest" value="No"><span>No</span></label>
+<label class="choice"><input type="radio" name="Return Interest" value="Not sure yet"><span>Not sure yet</span></label>
 </div></div>
-<div class="field"><span class="field-label required">9. About how long did they play?</span><div class="choices">
-<label class="choice"><input type="radio" name="Play Time" value="Under 5 minutes" required><span>Under 5 minutes</span></label>
-<label class="choice"><input type="radio" name="Play Time" value="5 to 10 minutes"><span>5–10 minutes</span></label>
-<label class="choice"><input type="radio" name="Play Time" value="10 to 20 minutes"><span>10–20 minutes</span></label>
-<label class="choice"><input type="radio" name="Play Time" value="More than 20 minutes"><span>More than 20 minutes</span></label>
+<div class="field"><span class="field-label required">9. About how long were they engaged?</span><div class="choices">
+<label class="choice"><input type="radio" name="Engagement Time" value="Under 5 minutes" required><span>Under 5 minutes</span></label>
+<label class="choice"><input type="radio" name="Engagement Time" value="5 to 10 minutes"><span>5–10 minutes</span></label>
+<label class="choice"><input type="radio" name="Engagement Time" value="10 to 20 minutes"><span>10–20 minutes</span></label>
+<label class="choice"><input type="radio" name="Engagement Time" value="More than 20 minutes"><span>More than 20 minutes</span></label>
 </div></div>
-<div class="field"><label class="required" for="personalPart">10. Which details made the game feel especially personal to them?</label><textarea id="personalPart" name="Most Personal Details" required></textarea></div>
+<div class="field"><label class="required" for="personalPart">10. Which details made it feel especially personal to them?</label><textarea id="personalPart" name="Most Personal Details" required></textarea></div>
 </fieldset>
-
 <fieldset data-step="3" hidden>
 <legend>The parent tea</legend>
-<p class="step-lede">This part tells me whether the experience can become a real service, not just a cute one-off.</p>
-<div class="field"><span class="field-label required">11. How easy was it to open and use the game link?</span><div class="choices">
+<p class="step-lede">Tell me whether the format, screen use, and overall experience fit your family.</p>
+<div class="field"><span class="field-label required">11. How easy was it to open and use the link?</span><div class="choices">
 <label class="choice"><input type="radio" name="Parent Ease" value="Very easy" required><span>Very easy</span></label>
 <label class="choice"><input type="radio" name="Parent Ease" value="Mostly easy"><span>Mostly easy</span></label>
 <label class="choice"><input type="radio" name="Parent Ease" value="A little confusing"><span>A little confusing</span></label>
 <label class="choice"><input type="radio" name="Parent Ease" value="Could not use without help"><span>I could not use it without help</span></label>
 </div></div>
-<div class="field"><span class="field-label required">12. Did the game feel right for their age?</span><div class="choices">
-<label class="choice"><input type="radio" name="Age Fit" value="Too easy" required><span>Too easy</span></label>
-<label class="choice"><input type="radio" name="Age Fit" value="About right"><span>About right</span></label>
-<label class="choice"><input type="radio" name="Age Fit" value="Too difficult"><span>Too difficult</span></label>
-<label class="choice"><input type="radio" name="Age Fit" value="Mixed"><span>Mixed depending on the section</span></label>
+<div class="field"><span class="field-label required">12. Did the experience feel right for their age and your family’s screen preferences?</span><div class="choices">
+<label class="choice"><input type="radio" name="Family Fit" value="Very good fit" required><span>Very good fit</span></label>
+<label class="choice"><input type="radio" name="Family Fit" value="Mostly a fit"><span>Mostly a fit</span></label>
+<label class="choice"><input type="radio" name="Family Fit" value="Needed less screen or structure"><span>It needed less screen or structure</span></label>
+<label class="choice"><input type="radio" name="Family Fit" value="Needed more guidance or interaction"><span>It needed more guidance or interaction</span></label>
+<label class="choice"><input type="radio" name="Family Fit" value="Not a fit"><span>It was not a fit for us</span></label>
 </div></div>
-<div class="field"><span class="field-label required">13. Could you imagine buying a personalized game like this?</span><div class="choices">
+<div class="field"><span class="field-label required">13. Could you imagine requesting or buying a personalized experience like this?</span><div class="choices">
 <label class="choice"><input type="radio" name="Purchase Interest" value="Yes, for my own child" required><span>Yes, for my own child</span></label>
 <label class="choice"><input type="radio" name="Purchase Interest" value="Yes, as a gift"><span>Yes, as a gift</span></label>
-<label class="choice"><input type="radio" name="Purchase Interest" value="Maybe, depending on price and features"><span>Maybe, depending on price and features</span></label>
+<label class="choice"><input type="radio" name="Purchase Interest" value="Maybe, depending on format and price"><span>Maybe, depending on the format and price</span></label>
 <label class="choice"><input type="radio" name="Purchase Interest" value="Probably not"><span>Probably not</span></label>
 </div></div>
-<div class="field"><label class="required" for="price">14. Without overthinking it, what price would feel reasonable for a personalized mini-game?</label><span class="help">A number or range is perfect.</span><input id="price" name="Reasonable Price" type="text" required></div>
-<div class="field"><label for="worthPaying">15. What would make it feel especially worth paying for?</label><textarea id="worthPaying" name="What Makes It Worth Paying For"></textarea></div>
+<div class="field"><label class="required" for="price">14. Without overthinking it, what price would feel reasonable for a personalized browser experience?</label><span class="help">A number or range is perfect.</span><input id="price" name="Reasonable Price" type="text" required></div>
+<div class="field"><label for="worthPaying">15. What would make an experience like this feel especially worth paying for?</label><textarea id="worthPaying" name="What Makes It Worth Paying For"></textarea></div>
 <div class="field"><label for="anythingElse">16. Anything else Auntie needs to know?</label><textarea id="anythingElse" name="Anything Else"></textarea></div>
 </fieldset>
-
 <div class="actions"><button class="secondary" id="backButton" type="button" hidden>Back</button><button class="primary" id="nextButton" type="button">Next</button><button class="primary" id="submitButton" type="submit" hidden>Send the tea</button></div>
 </form>
-<p class="footer">Auntie Apps · Honest feedback makes the game better</p>
+<p class="footer">Auntie Apps · Honest feedback makes the experience better</p>
 </main>
 <script>
-const form=document.getElementById('feedbackForm'),fieldsets=[...form.querySelectorAll('fieldset[data-step]')],nextButton=document.getElementById('nextButton'),backButton=document.getElementById('backButton'),submitButton=document.getElementById('submitButton'),progressBar=document.getElementById('progressBar'),progressText=document.getElementById('progressText'),email=document.getElementById('email'),replyTo=document.getElementById('replyTo'),thankYouUrl=document.getElementById('thankYouUrl'),formUrl=document.getElementById('formUrl');let currentStep=0;
-if(location.protocol==='http:'||location.protocol==='https:'){thankYouUrl.value=new URL('feedback-thank-you.html',location.href).href;formUrl.value=location.href}
-function showStep(i){fieldsets.forEach((f,x)=>f.hidden=x!==i);currentStep=i;progressBar.style.width=`${((i+1)/fieldsets.length)*100}%`;progressText.textContent=`Step ${i+1} of ${fieldsets.length}`;backButton.hidden=i===0;nextButton.hidden=i===fieldsets.length-1;submitButton.hidden=i!==fieldsets.length-1;scrollTo({top:0,behavior:'smooth'})}
-function valid(){for(const c of fieldsets[currentStep].querySelectorAll('input,textarea,select'))if(!c.checkValidity()){c.reportValidity();return false}return true}
-nextButton.onclick=()=>{if(valid())showStep(currentStep+1)};backButton.onclick=()=>showStep(currentStep-1);
-form.addEventListener('submit',e=>{if(!valid()){e.preventDefault();return}if(location.protocol!=='http:'&&location.protocol!=='https:'){e.preventDefault();alert('This preview is running as a local file. The form will submit once it is hosted online.');return}replyTo.value=email.value;thankYouUrl.value=new URL('feedback-thank-you.html',location.href).href;formUrl.value=location.href;submitButton.disabled=true;submitButton.textContent='Sending…'})
+const form=document.getElementById('feedbackForm'),fieldsets=[...form.querySelectorAll('fieldset[data-step]')],nextButton=document.getElementById('nextButton'),backButton=document.getElementById('backButton'),submitButton=document.getElementById('submitButton'),progressBar=document.getElementById('progressBar'),progressText=document.getElementById('progressText'),email=document.getElementById('email'),replyTo=document.getElementById('replyTo'),thankYouUrl=document.getElementById('thankYouUrl'),formUrl=document.getElementById('formUrl');let currentStep=0;if(location.protocol==='http:'||location.protocol==='https:'){thankYouUrl.value=new URL('feedback-thank-you.html',location.href).href;formUrl.value=location.href}function showStep(i){fieldsets.forEach((f,n)=>f.hidden=n!==i);currentStep=i;progressBar.style.width=`${((i+1)/fieldsets.length)*100}%`;progressText.textContent=`Step ${i+1} of ${fieldsets.length}`;backButton.hidden=i===0;nextButton.hidden=i===fieldsets.length-1;submitButton.hidden=i!==fieldsets.length-1;scrollTo({top:0,behavior:'smooth'})}function valid(){for(const c of fieldsets[currentStep].querySelectorAll('input,textarea,select')){if(!c.checkValidity()){c.reportValidity();return false}}return true}nextButton.onclick=()=>{if(valid())showStep(currentStep+1)};backButton.onclick=()=>showStep(currentStep-1);form.addEventListener('submit',e=>{if(!valid()){e.preventDefault();return}if(location.protocol!=='http:'&&location.protocol!=='https:'){e.preventDefault();alert('This form will submit once it is hosted online.');return}replyTo.value=email.value;thankYouUrl.value=new URL('feedback-thank-you.html',location.href).href;formUrl.value=location.href;submitButton.disabled=true;submitButton.textContent='Sending…'})
 </script>
 </body>
 </html>
