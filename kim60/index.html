@@ -72,14 +72,14 @@ button{border:0;border-radius:999px;padding:14px 20px;font:inherit;font-weight:9
 <div id="landing">
   <div class="badge">Kim turns 60 ✨</div>
   <h1>NAME! <span>THAT! KIM!</span></h1>
-  <p class="lede">Eight questions. Sixty years of Kim. One husband who accidentally submitted a formal complaint disguised as trivia material.</p>
-  <div class="meta"><div class="pill">📱 Phone friendly</div><div class="pill">🎉 8 questions</div><div class="pill">⏱️ About 5 minutes</div></div>
+  <p class="lede">Twelve questions. Sixty years of Kim. A little public record, a lot of lore, some Purple Reign, and one husband who submitted supporting documentation.</p>
+  <div class="meta"><div class="pill">📱 Phone friendly</div><div class="pill">🎉 12 questions</div><div class="pill">⏱️ About 8 minutes</div></div>
   <div class="actions"><button class="primary" id="startBtn">Start the game</button></div>
   <p class="note">No login. No app download. Your score stays on your phone.</p>
 </div>
 
 <div id="game">
-  <div class="progressRow"><span id="progressText">Question 1 of 8</span><span id="scoreTiny">0 answered</span></div>
+  <div class="progressRow"><span id="progressText">Question 1 of 12</span><span id="scoreTiny">0 answered</span></div>
   <div class="track"><div class="bar" id="bar"></div></div>
   <div class="qnum" id="qnum">Question 1</div>
   <h2 class="question" id="question"></h2>
@@ -114,58 +114,104 @@ button{border:0;border-radius:999px;padding:14px 20px;font:inherit;font-weight:9
 </div>
 </div>
 </section>
-<div class="footer">Made with love, classified husband intelligence, and just enough foolishness for Kim's 60th.</div>
+<div class="footer">Made with love, Kim research, deep lore, Purple Reign, and one small file from the Complaint Department.</div>
 </main>
 
 <script>
 const questions = [
 {
-q:"Kim is running late. Which event is important enough for her to rush to?",
-choices:["A Wizards game while they were in last place","A secret Prince rehearsal","A brunch reservation six months away","A neighborhood association meeting"],
+round:"Kim Through the Years",
+q:"Put Kim's educational plotline in the right order.",
+choices:[
+"Johns Hopkins → Columbia Mailman → Georgetown leadership coaching",
+"Columbia Mailman → Johns Hopkins → Georgetown leadership coaching",
+"Georgetown → Columbia Mailman → Johns Hopkins",
+"Johns Hopkins → Georgetown → Columbia Mailman"
+],
 correct:0,
-why:"Kevin's evidence: Kim does not like being late, even when the stakes are... debatable."
+why:"BS in Natural Sciences at Johns Hopkins, MPH at Columbia Mailman, then leadership-coaching training at Georgetown. Casual overachiever behavior."
 },
 {
-q:"Kim gets home from a trip. What happens before the luggage is even put away?",
+round:"Kim Through the Years",
+q:"Kim's graduate degree is in which field?",
+choices:["Public Health","Fine Arts","Political Science","Business Administration"],
+correct:0,
+why:"Kim earned an MPH from Columbia University Mailman School of Public Health."
+},
+{
+round:"Kim Through the Years",
+q:"Kim's published work has included efforts to improve diversity and access in what professional field?",
+choices:["Dental education","Architecture","Broadcast journalism","Hospitality"],
+correct:0,
+why:"She co-authored research on the Dental Pipeline program, including access disparities and recruitment of underrepresented students."
+},
+{
+round:"Kim Through the Years",
+q:"Kim once co-hosted a podcast about visibility, careers, diversity and the experiences of women of color. What was it called?",
+choices:["Visible Women","Seen & Heard","The Equity Edit","Main Character Energy"],
+correct:0,
+why:"Visible Women ran for 24 episodes with Kim D'Abreu and Corynne Corbett. Yes, she had a podcast before everybody had a podcast."
+},
+{
+round:"Purple Reign",
+q:"Which artist gets automatic VIP status in any respectable soundtrack to Kim's life?",
+choices:["Prince","Bruno Mars","Usher","Stevie Wonder"],
+correct:0,
+why:"If you had to think too long about this one, your friendship badge is under review."
+},
+{
+round:"Culture, Please",
+q:"Which one is NOT among the live arts Kim has publicly named as a love?",
+choices:["Broadway musicals","Opera at the Met","Alvin Ailey American Dance Theater","Professional monster-truck rallies"],
+correct:3,
+why:"She specifically names Broadway, the Met, and Alvin Ailey, especially Revelations. Grave Digger has not made the published list."
+},
+{
+round:"Deep Kim Lore",
+q:"What are the names of Kim's two cats?",
+choices:["Brooke and Lynn","Prince and Sheila","Thelma and Louise","Olivia and Fitz"],
+correct:0,
+why:"Brooke and Lynn. One of them will shortly require legal representation in this game."
+},
+{
+round:"Kevin Has Notes",
+q:"Kim gets home from a trip. What can happen before the luggage is even put away?",
 choices:["She checks the mail","She washes any dirty dishes in the kitchen","She takes a nap","She posts the vacation photos"],
 correct:1,
-why:"Apparently the suitcase can wait. The sink cannot."
+why:"According to Kevin's filing, the suitcase can wait. The sink cannot."
 },
 {
-q:"Kim is VERY excited to watch a great movie or TV show. What usually happens next?",
-choices:["She live-texts everybody","She rewinds every scene","She falls asleep within about 15 minutes","She starts researching the cast"],
-correct:2,
-why:"Enthusiasm: 10/10. Consciousness after 15 minutes: pending."
-},
-{
-q:"Kim and Kevin arrive at the airport two hours early and are already through security. What does Kim do?",
+round:"Kevin Has Notes",
+q:"Kim and Kevin arrive at the airport two hours early and are already through security. What does Kim do next?",
 choices:["Find the lounge","Get a snack","Browse the shops","Speed-walk to the gate 7–8 steps ahead of Kevin"],
 correct:3,
-why:"Kevin calls this the classic 'hurry up and wait.'"
+why:"Kevin calls this the classic 'hurry up and wait.' The gate, apparently, could leave without warning."
 },
 {
-q:"Kevin quietly comments that a stranger's outfit is a bad look. How does Kim react?",
-choices:["She joins the critique","She gets upset like Kevin said it directly to the person's face","She takes a photo for evidence","She pretends not to know him"],
-correct:1,
-why:"Kim's empathy apparently has excellent hearing."
-},
-{
+round:"The Complaint Department",
 q:"Who does Kim continue to defend despite repeated allegations involving poop around the house?",
 choices:["Kevin","The Washington Wizards","Brooke the cat","The neighborhood squirrels"],
 correct:2,
-why:"Brooke has counsel. Her counsel is Kim."
+why:"Brooke has counsel. Her counsel is Kim. Kevin would like the record to reflect his objection."
 },
 {
-q:"Which artist is important enough to deserve his own lane in a game about Kim?",
-choices:["Prince","Bruno Mars","Usher","Stevie Wonder"],
-correct:0,
-why:"Prince people already knew this one before they finished reading the question."
-},
-{
-q:"Kim turns 60 this weekend. How old is birthday twin Cammie turning?",
+round:"60 vs. 20",
+q:"Kim turns 60 this weekend. How old is her birthday twin Cammie turning?",
 choices:["18","20","21","30"],
 correct:1,
-why:"Sixty and twenty. A perfect little birthday math problem."
+why:"Sixty and twenty. Same birthday, forty-year spread, extremely convenient trivia material."
+},
+{
+round:"NAME! THAT! KIM! Finale",
+q:"Which of these has Kim actually done?",
+choices:[
+"Co-hosted a podcast",
+"Published work in dental education",
+"Served on the National Cathedral School governing board",
+"All of the above"
+],
+correct:3,
+why:"All of the above. The résumé has range, darling."
 }
 ];
 
@@ -186,7 +232,7 @@ function render(){
   $("progressText").textContent=`Question ${i+1} of ${questions.length}`;
   $("scoreTiny").textContent=`${picks.length} answered`;
   $("bar").style.width=`${(i/questions.length)*100}%`;
-  $("qnum").textContent=`Question ${i+1}`;
+  $("qnum").textContent=`${q.round} · Question ${i+1}`;
   $("question").textContent=q.q;
   $("choices").innerHTML="";
   selected=null;$("nextBtn").disabled=true;
@@ -213,10 +259,10 @@ function finish(){
   picks.forEach((p,idx)=>{if(p===questions[idx].correct)score++});
   $("scoreBig").textContent=`${score}/${questions.length}`;
   let title,copy;
-  if(score===8){title="Certified Kimologist 🏆";copy="You may have access to the classified files."}
-  else if(score>=6){title="Inner-circle behavior ✨";copy="You clearly know this woman and her patterns."}
-  else if(score>=4){title="Respectable Kim literacy 😌";copy="You know enough to stay at the party."}
-  else {title="Please report for remedial Kim orientation 😂";copy="Kevin has additional documentation available."}
+  if(score===12){title="Certified Kimologist 🏆";copy="Perfect score. Please collect your honorary key to the classified files."}
+  else if(score>=9){title="Inner-circle behavior ✨";copy="You know the résumé, the lore, AND the foolishness."}
+  else if(score>=6){title="Respectable Kim literacy 😌";copy="You know enough to keep your seat at the party."}
+  else {title="Casual Acquaintance Alert 😂";copy="Please report for remedial Kim orientation before dessert."}
   $("resultTitle").textContent=title;$("resultCopy").textContent=copy;
   $("answerList").innerHTML="";
   questions.forEach((q,idx)=>{
@@ -246,7 +292,7 @@ function hostMode(){
   $("hostAnswers").innerHTML="";
   questions.forEach((q,idx)=>{
     const d=document.createElement("div");d.className="hostAnswer";
-    d.innerHTML=`<strong>${idx+1}. ${q.q}</strong><div class="a">${q.choices[q.correct]}</div><div class="small">${q.why}</div>`;
+    d.innerHTML=`<div class="small">${q.round}</div><strong>${idx+1}. ${q.q}</strong><div class="a">${q.choices[q.correct]}</div><div class="small">${q.why}</div>`;
     $("hostAnswers").appendChild(d);
   });
   $("copyBtn").onclick=async()=>{await navigator.clipboard.writeText(base);$("copyBtn").textContent="Copied!";};
