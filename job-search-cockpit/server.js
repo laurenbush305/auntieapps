@@ -3,7 +3,7 @@ const crypto = require('crypto');
 
 const PORT = process.env.PORT || 10000;
 const USER = process.env.DASH_USER || 'lauren';
-const PASS = process.env.DASH_PASS || '';
+const PASS_SHA256 = process.env.DASH_PASS_SHA256 || '';
 const SHEET_URL = process.env.SHEET_URL || '';
 const NOTION_URL = process.env.NOTION_URL || '';
 
@@ -20,12 +20,13 @@ function safeEqual(a,b){
   return crypto.timingSafeEqual(A,B);
 }
 function authed(req){
-  if(!PASS) return true;
+  if(!PASS_SHA256) return true;
   const h=req.headers.authorization||'';
   if(!h.startsWith('Basic ')) return false;
   try{
     const [u,p='']=Buffer.from(h.slice(6),'base64').toString('utf8').split(':');
-    return safeEqual(u,USER) && safeEqual(p,PASS);
+    const ph=crypto.createHash('sha256').update(p).digest('hex');
+    return safeEqual(u,USER) && safeEqual(ph,PASS_SHA256);
   }catch{return false;}
 }
 function esc(s=''){
